@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Portofolio Siswa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: hsl(210, 29%, 41%);
+            color: #333;
+        }
+        header {
+            background-color: #80a7cc;
+            color: #0f0e0e;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        nav {
+            background-color: #5f89b5;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #020405;
+            border-bottom: 2px solid #80a7cc;
+            padding-bottom: 5px;
+        }
+        .biodata table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .biodata td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        .skills ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #e6eff7;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact li {
+            margin-bottom: 8px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            background-color: #80a7cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #80a7cc;
+            color: white;
+        }
+    </style>
+</head>
+<body><!-- HOME --><header id="home">
+    <alt="Foto Profil">
+    <h1>Kinaryosih Anatanaya</h1>
+    <p>Profil Isi Siswa</p>
+</header><nav>
+    <a href="#home">Home</a>
+    <a href="#about">Tentang Saya</a>
+    <a href="#portfolio">Portofolio</a>
+    <a href="#contact">Kontak</a>
+</nav><section class="skills">
+    <h2>Ringkasan Kemampuan</h2>
+    <ul>
+        <li>Menganalisi sebuah teks</li>
+        <li>Menghafal suatu isi materi</li>
+        <li>Menulis laporan</li>
+    </ul>
+</section><!-- TENTANG SAYA --><section id="about" class="biodata">
+    <h2>Tentang Saya</h2>
+    <p>
+        Halo! Nama saya Kinaryosih Anatanaya, atau Kinar singkatnya. Saat ini saya berusia 17 tahun, lahir pada tanggal 28 April 2008. Saat ini, saya adalah siswa SMA Budi Luhur kelas 12, saya berada di kelas 12-D yaitu kelas Informatika. Di sana kami belajar mata pelajaran Informatika, Ekonomi, Fisika, dan Geografi.
+    </p>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td>: Kinaryosih Anatanaya</td>
+        </tr>
+        <tr>
+            <td>Sekolah</td>
+            <td>: SMA Budi Luhur</td>
+        </tr>
+        <tr>
+            <td>Kelas</td>
+            <td>: XII-D</td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>: Menonton Film, Membaca Buku</td>
+        </tr>
+    </table>
+</section><!-- PORTOFOLIO --> <section id="portfolio">
+    <h2>Portofolio</h2>
+    <div class="portfolio">
+        <div class="card">
+            <h3>Proyek Model Skala</h3>
+            <h3>Proyek Youthforia</h3>
+        </div>
+        <div class="card">
+            <h3>Proyek Film Pendek</h3>
+            <h3>ProyeK Karya Tulis Ilmiah</h3>
+        </div>
+<a href="#contact">
+</a>
+<!-- KONTAK -->
+</section><!-- KONTAK --> <section id="kontak">
+    <h2>Kontak</h2>
+    <div class="portfolio">
+    <p>Jika ingin menghubungi saya, silakan melalui informasi berikut atau kirim pesan.</p>
+</div>
+<div class="card">
+    <ul>
+        <li><strong>Email:</strong> kinaryosihanatanaya@gmail.com</li>
+        <li><strong>Instagram:</strong> blessmeacuuh</li>
+        <li><strong>WhatsApp:</strong> 081295499311</li>
+    </ul>
+
+    <form>
+        <input type="text" placeholder="Nama Anda" required>
+        <input type="email" placeholder="Email Anda" required>
+        <textarea rows="4" placeholder="Pesan Anda"></textarea>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
